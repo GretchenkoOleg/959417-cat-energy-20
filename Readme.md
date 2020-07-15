@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Олег Гретченко](https://up.htmlacademy.ru/adaptive/20/user/959417).
-* Наставник: `Неизвестно`.
+* Наставник: [Илья Приходкин](https://htmlacademy.ru/profile/prikhodkin).
 
 ---
 
