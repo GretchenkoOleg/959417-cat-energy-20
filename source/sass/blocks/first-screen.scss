@@ -1,0 +1,42 @@
+.first-screen {
+  background-image: url("../../img/index-background-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position-x: center;
+}
+
+.first-screen__title {
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: 100;
+  color: $secondary-title-color;
+  text-align: center;
+
+  margin: 0 auto;
+  padding-top: 29px;
+  width: 310px;
+}
+
+.first-screen__slogan {
+  font-size: 14px;
+  line-height: 14px;
+  font-weight: 100;
+  color: #ffffff;
+  text-align: center;
+
+  display: block;
+  padding-top: 19px;
+  text-transform: uppercase;
+}
+
+.first-screen__image-feed-pack {
+  display: block;
+  padding-top: 29px;
+  margin: 0 auto;
+}
+
+.first-screen__link {
+  display: inline-block;
+  font-size: 14px;
+  line-height: 18px;
+  color: #ffffff;
+}
