@@ -1,0 +1,29 @@
+.show-all {
+  background-color: $bg-color;
+  border: solid 1px $border-color;
+}
+
+.show-all__title {
+  font-size: 16px;
+  line-height: 20px;
+  color: $title-color;
+
+  margin-top: 83px;
+  text-align: center;
+}
+
+.show-all__slogan {
+  font-size: 12px;
+  line-height: 16px;
+  color: $text-color;
+  text-align: center;
+}
+
+.show-all__button {
+  font-size: 16px;
+  line-height: 20px;
+  color: #111111;
+  margin-bottom: 25px;
+
+  background-color: $secondary-bg-color;
+}

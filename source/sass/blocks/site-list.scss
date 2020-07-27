@@ -1,0 +1,22 @@
+.site-list {
+  margin: 0;
+  padding: 0;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.site-list__item {
+  list-style: none;
+  height: 65px;
+  text-align: center;
+  vertical-align: middle;
+  border: 1px solid $border-color;
+}
+
+.site-list__link {
+  display: inline-block;
+  text-transform: uppercase;
+  padding-top: 24px;
+  color: #000000;
+}
