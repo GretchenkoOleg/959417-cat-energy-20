@@ -3,12 +3,7 @@
 }
 
 .advantages__title {
-  font-size: 36px;
-  line-height: 60px;
-  color: $title-color;
-
-  margin: 0;
-  margin-top: 32px;
+  padding-top: 27px;
 }
 
 .advantages__list {
@@ -21,6 +16,7 @@
 .advantages__item {
   list-style: none;
   width: 176px;
+  margin: 0 auto;
 
   z-index: 1;
 }
