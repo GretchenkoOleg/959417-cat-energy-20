@@ -1,0 +1,31 @@
+.example {
+  background-color: $secondary-bg-color;
+}
+
+.example__title {
+  padding-top: 27px;
+}
+
+.example__description {
+  padding-top: 33px;
+  width: 280px;
+  margin: 0 auto;
+}
+
+.example__feature {
+  display: flex;
+  padding: 0;
+}
+
+.example__benefits {
+  list-style: none;
+  text-align: center;
+}
+
+.example__total {
+  font-size: 14px;
+  line-height: 20px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
