@@ -1,16 +1,29 @@
 .page-header {
-  font-family: "Oswald", "Arial", sans-serif;
+  font-family: "Oswald";
   font-weight: 500;
   font-style: 20px;
   line-height: 20px;
   color: #000000;
 
   background-color: $bg-color;
+
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }
 
 .page-header__logo {
   min-height: 65px;
   border: 1px solid $border-color;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 24px;
+    border: none;
+  }
 }
 
 .page-header__logo img {

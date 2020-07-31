@@ -6,13 +6,30 @@
   font-size: 36px;
   line-height: 60px;
   color: $title-color;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+  }
 }
 
 .catalog__list {
   margin: 0;
   padding: 0;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
 }
 
 .catalog__item {
   list-style: none;
+
+  @media (min-width: $tablet-width) {
+    background-color: $secondary-bg-color;
+    min-width: 324px;
+    min-height: 431px;
+    margin-top: 140px;
+  }
 }

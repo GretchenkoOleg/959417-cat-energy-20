@@ -2,36 +2,65 @@
   background-image: url("../../img/index-background-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position-x: center;
+
+  @media (min-width: $tablet-width) {
+    background-image: none;
+    background-color: $bg-color;
+  }
 }
 
 .first-screen__title {
+  font-family: "Oswald";
   font-size: 36px;
   line-height: 36px;
-  font-weight: 100;
+  font-weight: normal;
   color: $secondary-title-color;
   text-align: center;
 
   margin: 0 auto;
   padding-top: 29px;
-  width: 310px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+    color: $title-color;
+    text-align: left;
+    margin-left: 91px;
+
+    width: 414px;
+  }
 }
 
 .first-screen__slogan {
   font-size: 14px;
   line-height: 14px;
-  font-weight: 100;
+  font-weight: normal;
   color: #ffffff;
   text-align: center;
 
   display: block;
   padding-top: 19px;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+    color: #111111;
+    text-align: left;
+
+    padding-top: 33px;
+    margin-left: 91px;
+  }
 }
 
 .first-screen__image-feed-pack {
   display: block;
   padding-top: 29px;
   margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    order: 2;
+  }
 }
 
 .first-screen__link {
@@ -39,4 +68,9 @@
   font-size: 14px;
   line-height: 18px;
   color: #ffffff;
+
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    margin: -260px 90px;
+  }
 }

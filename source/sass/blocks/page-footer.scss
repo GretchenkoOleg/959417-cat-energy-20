@@ -1,11 +1,28 @@
 .page-footer {
   background-color: $secondary-bg-color;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.page-footer .container {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 .page-footer__logo-image {
   margin: 0 auto;
   padding-top: 39px;
   display: block;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 64px;
+    padding-bottom: 62px;
+  }
 }
 
 .page-footer__link {
@@ -16,4 +33,9 @@
   display: flex;
   justify-content: space-between;
   padding-top: 53px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 60px;
+    display: inline-block;
+  }
 }
