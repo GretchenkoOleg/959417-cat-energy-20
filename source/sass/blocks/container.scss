@@ -16,7 +16,7 @@
 //От 1200px десктопная версия
 @media (min-width: $desktop-width) {
   .container {
-  width: 1220px; //Заменить на auto для резины
-  padding: 0 55px;
+    width: 1220px; //Заменить на auto для резины
+    padding: 0 55px;
   }
 }
