@@ -5,6 +5,11 @@
 .programs__list {
   margin: 0;
   padding: 0;
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 .programs__item {
@@ -13,6 +18,10 @@
   list-style: none;
   margin-top: 22px;
   padding-right: 22px;
+
+  @media (min-width: $desktop-width) {
+    width: 570px;
+  }
 }
 
 .programs__title {
@@ -31,6 +40,10 @@
 
     padding-top: 81px;
     padding-left: 55px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 216px;
   }
 }
 
@@ -51,6 +64,12 @@
     margin-left: 52px;
     margin-top: 26px;
     width: 371px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 462px;
+
+    margin-top: 75px;
   }
 }
 
@@ -73,5 +92,9 @@
     margin-top: 61px;
     margin-left: 53px;
     padding-bottom: 62px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 36px;
   }
 }

@@ -7,6 +7,12 @@
     background-image: none;
     background-color: $bg-color;
   }
+
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    margin-top: -575px;
+    background: none;
+  }
 }
 
 .first-screen__title {

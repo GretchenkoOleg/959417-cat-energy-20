@@ -32,4 +32,8 @@
     min-height: 431px;
     margin-top: 140px;
   }
+
+  @media (min-width: $desktop-width) {
+    min-width: 245px;
+  }
 }

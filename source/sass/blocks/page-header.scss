@@ -24,6 +24,11 @@
     padding-top: 24px;
     border: none;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 53px;
+    border: none;
+  }
 }
 
 .page-header__logo img {

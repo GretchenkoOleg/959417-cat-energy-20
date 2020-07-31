@@ -1,5 +1,9 @@
 .product {
   border: solid 1px $border-color;
+
+  @media (min-width: $desktop-width) {
+    min-width: 245px;
+  }
 }
 
 .product__title {
@@ -65,6 +69,16 @@
     padding-bottom: 15px;
     border-bottom: 1px solid #000000;
   }
+
+  @media (min-width: $desktop-width) {
+    min-width: 169px;
+
+    margin-left: 40px;
+    margin-top: 10px;
+    margin-right: 40px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #000000;
+  }
 }
 
 .product__benefits p {
@@ -78,5 +92,10 @@
   @media (min-width: $tablet-width) {
     margin-left: 20px;
     margin-top: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 169px;
+    margin-left: 40px;
   }
 }
