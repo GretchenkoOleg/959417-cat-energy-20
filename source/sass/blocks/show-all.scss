@@ -1,15 +1,43 @@
 .show-all {
   background-color: $bg-color;
   border: solid 1px $border-color;
+
+  @media (min-width: $desktop-width) {
+    min-width: 245px;
+    margin-left: 35px;
+    margin-right: 35px;
+  }
+}
+
+.show-all__card {
+  text-align: center;
+}
+
+.show-all__image {
+  @media (min-width: $tablet-width) {
+    margin-top: 52px;
+  }
 }
 
 .show-all__title {
+  margin: 0 auto;
+
   font-size: 16px;
   line-height: 20px;
   color: $title-color;
 
-  margin-top: 83px;
+  margin-top: 23px;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    font-family: "Oswald", "Arial", sans-serif;
+    font-size: 20px;
+    line-height: 22px;
+    text-transform: uppercase;
+
+    margin-top: 49px;
+    width: 134px;
+  }
 }
 
 .show-all__slogan {
@@ -17,13 +45,27 @@
   line-height: 16px;
   color: $text-color;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 auto;
+    margin-top: 23px;
+    font-family: "Arial", sans-serif;
+    font-size: 16px;
+    line-height: 18px;
+    text-align: center;
+
+    width: 167px;
+  }
 }
 
 .show-all__button {
-  font-size: 16px;
-  line-height: 20px;
   color: #111111;
   margin-bottom: 25px;
 
   background-color: $secondary-bg-color;
+
+  @media (min-width: $tablet-width) {
+    width: 169px;
+    margin-top: 87px;
+  }
 }

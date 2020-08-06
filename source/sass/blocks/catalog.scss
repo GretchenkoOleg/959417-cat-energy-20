@@ -21,6 +21,12 @@
     flex-wrap: wrap;
     justify-content: space-between;
   }
+
+  @media (min-width: $desktop-width) {
+    justify-content: start;
+    margin-left: -35px;
+    margin-right: -35px;
+  }
 }
 
 .catalog__item {

@@ -4,22 +4,12 @@
   width: 280px;
   margin: 0 auto;
   background-color: $bg-color;
-}
 
-@media (min-width: $tablet-width) {
-  .main-nav {
+  @media (min-width: $tablet-width) {
     /*Временно для сетки*/
     min-height: 90px;
 
     width: auto;
     margin: 0;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .main-nav {
-    background-image: url("../../img/index-background-desktop@1x.jpg");
-    min-width: 720px;
-    min-height: 696px;
   }
 }
