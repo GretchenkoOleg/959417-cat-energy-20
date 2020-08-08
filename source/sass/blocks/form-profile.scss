@@ -2,11 +2,37 @@
   background-color: $bg-color;
 }
 
-.form-profile p {
+.form-profile__title {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-weight: normal;
+  font-size: 33px;
+  line-height: 36px;
+  margin-top: 27px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+    margin-top: 65px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 74px;
+  }
+}
+
+.form-profile__text {
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 14px;
   line-height: 18px;
+  font-weight: normal;
 
-  width: 226px;
+  margin-top: 37px;
 
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+    width: 323px;
+  }
 }

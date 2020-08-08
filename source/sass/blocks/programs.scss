@@ -1,11 +1,15 @@
 .programs {
   background-color: $bg-color;
-  text-align: center;
 }
 
 .programs__list {
   margin: 0;
   padding: 0;
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 .programs__item {
@@ -13,17 +17,34 @@
 
   list-style: none;
   margin-top: 22px;
+  padding-right: 22px;
+
+  @media (min-width: $desktop-width) {
+    width: 570px;
+  }
 }
 
 .programs__title {
   font-size: 24px;
   line-height: 37px;
+  font-weight: normal;
   color: $title-color;
   text-transform: uppercase;
 
   margin: 0;
   padding-top: 39px;
-  padding-left: 92px;
+  padding-left: 82px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 37px;
+
+    padding-top: 81px;
+    padding-left: 55px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 216px;
+  }
 }
 
 .programs__description {
@@ -35,11 +56,27 @@
   margin-left: 20px;
   margin-top: 36px;
   width: 223px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 24px;
+
+    margin-left: 52px;
+    margin-top: 26px;
+    width: 371px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 462px;
+
+    margin-top: 75px;
+  }
 }
 
 .programs__link {
   font-size: 16px;
   line-height: 16px;
+  font-weight: normal;
   color: #111111;
   text-transform: uppercase;
 
@@ -47,4 +84,17 @@
   margin-top: 44px;
   margin-left: 20px;
   padding-bottom: 22px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+
+    margin-top: 61px;
+    margin-left: 53px;
+    padding-bottom: 62px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 36px;
+  }
 }

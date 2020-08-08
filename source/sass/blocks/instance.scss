@@ -1,0 +1,7 @@
+.instance {
+  @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: space-between;
+    background-color: $secondary-bg-color;
+  }
+}

@@ -1,0 +1,11 @@
+.sample {
+  background-color: $secondary-bg-color;
+
+  @media (min-width: $tablet-width) {
+    background-color: $bg-color;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 205px;
+  }
+}

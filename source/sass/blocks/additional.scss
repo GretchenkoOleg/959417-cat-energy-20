@@ -1,12 +1,28 @@
 .additional {
   background-color: $bg-color;
+
+  @media (min-width: $desktop-width) {
+    min-width: 896px;
+  }
 }
 
 .additional__subtitle {
   font-size: 24px;
   line-height: 24px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
+
+    margin-top: 68px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 76px;
+  }
 }
 
 .additional__list {
   list-style: none;
+  padding: 0;
 }

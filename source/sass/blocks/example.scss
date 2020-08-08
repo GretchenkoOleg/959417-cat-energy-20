@@ -1,15 +1,54 @@
 .example {
   background-color: $secondary-bg-color;
+
+  @media (min-width: $tablet-width) {
+    background-color: $bg-color;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 205px;
+    background-color: $secondary-bg-color;
+  }
 }
 
 .example__title {
   padding-top: 27px;
+
+  @media (min-width: $tablet-width) {
+    font-family: "Oswald", "Arial", sans-serif;
+    font-weight: normal;
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-family: "Oswald", "Arial", sans-serif;
+    font-size: 60px;
+    line-height: 60px;
+
+    position: absolute;
+    margin-top: -330px;
+    padding: 0;
+  }
 }
 
 .example__description {
   padding-top: 33px;
   width: 280px;
   margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 24px;
+    margin: 0;
+    padding: 0;
+    margin-top: 63px;
+    min-width: 700px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+  }
 }
 
 .example__feature {

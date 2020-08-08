@@ -1,0 +1,22 @@
+//От 320px мобильная версия
+.container {
+  width: 280px; //Зменить на auto для резины
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+//ОТ 768px планшетная версия
+@media (min-width: $tablet-width) {
+  .container {
+    width: 708px; //Заменить на auto для резины
+    padding: 0 30px;
+  }
+}
+
+//От 1200px десктопная версия
+@media (min-width: $desktop-width) {
+  .container {
+    width: 1220px; //Заменить на auto для резины
+    padding: 0 55px;
+  }
+}

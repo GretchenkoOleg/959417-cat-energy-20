@@ -1,9 +1,29 @@
 .direction-selection {
   background-color: $bg-color;
+  border: none;
+  margin: 0;
+  padding: 0;
+
+  @media (min-width: $tablet-width) {
+    border: 1px solid $border-color;
+    margin-top: 81px;
+  }
 }
 
 .direction-selection__list {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-weight: normal;
+
   list-style: none;
+  margin: 0;
+  padding: 0;
+
+  margin-top: 47px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 30px;
+    margin-bottom: 25px;
+  }
 }
 
 .direction-selection__item {
@@ -11,4 +31,9 @@
   line-height: 18px;
 
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }

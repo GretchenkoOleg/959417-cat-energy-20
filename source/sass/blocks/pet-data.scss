@@ -1,14 +1,29 @@
 .pet-data {
   background-color: $bg-color;
+  border: none;
+  margin: 0;
+  padding: 0;
 }
 
 .pet-data__list {
   list-style: none;
+  margin: 0;
+  padding: 0;
+  margin-top: 39px;
 }
 
 .pet-data__item {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-weight: normal;
   font-size: 16px;
   line-height: 18px;
 
+  display: flex;
+  margin-top: 10px;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
