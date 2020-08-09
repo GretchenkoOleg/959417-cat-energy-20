@@ -8,6 +8,10 @@
     border: 1px solid $border-color;
     margin-top: 81px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+  }
 }
 
 .direction-selection__list {
