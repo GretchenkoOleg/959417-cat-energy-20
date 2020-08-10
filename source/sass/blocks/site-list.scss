@@ -33,6 +33,10 @@
 
     border: none;
   }
+
+  @media (min-width: $desktop-width) {
+    z-index: 3;
+  }
 }
 
 .site-list__link {

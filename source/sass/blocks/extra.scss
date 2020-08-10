@@ -11,6 +11,10 @@
     display: flex;
     justify-content: space-between;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 610px;
+  }
 }
 
 .extra__title {
@@ -29,5 +33,10 @@
 .extra__button {
   @media (min-width: $tablet-width) {
     width: 100%;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 244px;
+    height: 20px;
   }
 }

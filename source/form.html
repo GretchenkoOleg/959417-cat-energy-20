@@ -38,52 +38,54 @@
           <p class="form-profile__text">Заполните анкету и мы подберем
             программу питания для вашего кота</p>
           <form class="form-program-selection" action="https://echo.htmlacademy.ru" method="post">
-            <fieldset class="pet-data">
-              <legend class="visually-hidden">Данные</legend>
-              <ul class="pet-data__list">
-                <li class="pet-data__item">
-                  <label for="name">
-                    Имя:<sup>*</sup>
-                  </label>
-                  <input type="text" name="login" placeholder="Барсик" id="name" required>
-                </li>
-                <li class="pet-data__item">
-                  <label for="weight">
-                    Вес (кг):<sup>*</sup>
-                  </label>
-                  <input type="text" name="weight" placeholder="7" id="weight" required>
-                </li>
-                <li class="pet-data__item">
-                  <label for="age">
-                    Возраст (лет):
-                  </label>
-                  <input type="text" name="age" placeholder="7" id="age">
-                </li>
-              </ul>
-            </fieldset>
-            <fieldset class="direction-selection">
-              <legend class="visually-hidden">Направление</legend>
-              <ul class="direction-selection__list">
-                <li class="direction-selection__item">
-                  <input type="checkbox" name="direction" id="losing-weight" value="losing-weight" checked>
-                  <label for="losing-weight">
-                    Похудение
-                  </label>
-                </li>
-                <li class="direction-selection__item">
-                  <input type="checkbox" name="direction" id="mass-gain" value="mass-gain">
-                  <label for="mass-gain">
-                    Набор массы
-                  </label>
-                </li>
-                <li class="direction-selection__item">
-                  <input type="checkbox" name="direction" id="your-advice" value="your-advice">
-                  <label for="your-advice">
-                    Не знаю (нужен ваш совет)
-                  </label>
-                </li>
-              </ul>
-            </fieldset>
+            <div class="data-block">
+              <fieldset class="pet-data">
+                <legend class="visually-hidden">Данные</legend>
+                <ul class="pet-data__list">
+                  <li class="pet-data__item">
+                    <label for="name">
+                      Имя:<sup>*</sup>
+                    </label>
+                    <input type="text" name="login" placeholder="Барсик" id="name" required>
+                  </li>
+                  <li class="pet-data__item">
+                    <label for="weight">
+                      Вес (кг):<sup>*</sup>
+                    </label>
+                    <input type="text" name="weight" placeholder="7" id="weight" required>
+                  </li>
+                  <li class="pet-data__item">
+                    <label for="age">
+                      Возраст (лет):
+                    </label>
+                    <input type="text" name="age" placeholder="7" id="age">
+                  </li>
+                </ul>
+              </fieldset>
+              <fieldset class="direction-selection">
+                <legend class="visually-hidden">Направление</legend>
+                <ul class="direction-selection__list">
+                  <li class="direction-selection__item">
+                    <input type="checkbox" name="direction" id="losing-weight" value="losing-weight" checked>
+                    <label for="losing-weight">
+                      Похудение
+                    </label>
+                  </li>
+                  <li class="direction-selection__item">
+                    <input type="checkbox" name="direction" id="mass-gain" value="mass-gain">
+                    <label for="mass-gain">
+                      Набор массы
+                    </label>
+                  </li>
+                  <li class="direction-selection__item">
+                    <input type="checkbox" name="direction" id="your-advice" value="your-advice">
+                    <label for="your-advice">
+                      Не знаю (нужен ваш совет)
+                    </label>
+                  </li>
+                </ul>
+              </fieldset>
+            </div>
             <fieldset class="owner-data">
               <legend class="visually-hidden">Данные владельца</legend>
               <h2 class="owner-data__title">Контактные данные (владельца кота)</h2>
@@ -142,9 +144,12 @@
                 </li>
               </ul>
             </fieldset>
-            <button type="submit" class="form-program-selection__button button">Отправить заявку</button>
+            <div class="block-form">
+              <button type="submit" class="form-program-selection__button button">Отправить заявку</button>
+              <p><sup>*</sup>— Обязательные поля</p>
+            </div>
           </form>
-          <p><sup>*</sup>— Обязательные поля</p>
+
         </section>
       </div>
       <section class="location location--gray">
