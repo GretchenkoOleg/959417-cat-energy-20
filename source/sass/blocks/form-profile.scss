@@ -1,13 +1,23 @@
 .form-profile {
   background-color: $bg-color;
+
 }
 
 .form-profile__title {
-  font-family: "Oswald", "Arial", sans-serif;
-  font-weight: normal;
+  position: relative;
   font-size: 33px;
-  line-height: 36px;
-  margin-top: 27px;
+  padding-top: 27px;
+
+  &::before {
+    content: "";
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+
+    border-top: 1px solid $border-color;
+  }
 
   @media (min-width: $tablet-width) {
     font-size: 60px;
@@ -21,12 +31,11 @@
 }
 
 .form-profile__text {
-  font-family: "Oswald", "Arial", sans-serif;
   font-size: 14px;
   line-height: 18px;
-  font-weight: normal;
 
   margin-top: 37px;
+  width: 226px;
 
   text-transform: uppercase;
 
