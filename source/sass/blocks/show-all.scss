@@ -33,7 +33,7 @@
   min-width: 245px;
 
   @media (min-width: $tablet-width) {
-   padding: 0;
+    padding: 0;
   }
 }
 
@@ -89,7 +89,7 @@
 
   &:focus,
   &:hover {
-    background-color: #EBEBEB;
+    background-color: #ebebeb;
     outline: none;
   }
 

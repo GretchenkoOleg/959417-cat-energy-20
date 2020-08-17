@@ -48,7 +48,7 @@
   }
 
   @media (min-width: $tablet-width) {
-    &:before {
+    &::before {
       display: none;
     }
   }
@@ -85,7 +85,7 @@
       left: 0;
       width: 100%;
 
-      border: 2px solid #68B738;
+      border: 2px solid #68b738;
     }
   }
 

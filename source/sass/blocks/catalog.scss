@@ -21,6 +21,7 @@
 
   @media (min-width: $tablet-width) {
     font-size: 60px;
+
     &::before {
       display: none;
     }

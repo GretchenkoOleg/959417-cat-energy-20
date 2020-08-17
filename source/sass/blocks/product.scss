@@ -121,7 +121,7 @@
 
   &:focus,
   &:hover {
-    background-color: #5EAA2F;
+    background-color: #5eaa2f;
     outline: none;
   }
 
@@ -134,26 +134,22 @@
     display: block;
     margin: 0 auto;
     margin-top: 30px;
-    width: 77%
-
-
+    width: 77%;
   }
 
   @media (min-width: $desktop-width) {
     width: 169px;
     margin-left: 40px;
-  }
-}
 
-.product__button {
-  &:focus,
-  &:hover {
-    background-color: #5EAA2F;
-    outline: none;
-  }
+    &:focus,
+    &:hover {
+      background-color: #5eaa2f;
+      outline: none;
+    }
 
-  &:active {
-    color: #ffffff;
-    opacity: 0.3;
+    &:active {
+      color: #ffffff;
+      opacity: 0.3;
+    }
   }
 }
