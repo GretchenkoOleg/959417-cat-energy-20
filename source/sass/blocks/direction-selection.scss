@@ -1,8 +1,21 @@
 .direction-selection {
+  position: relative;
   background-color: $bg-color;
   border: none;
   margin: 0;
   padding: 0;
+  margin-top: 47px;
+
+  &::before {
+    content: "";
+
+    position: absolute;
+    top: -20px;
+    left: 0;
+    width: 100%;
+
+    border-top: 1px solid #d9d9d9;
+  }
 
   @media (min-width: $tablet-width) {
     border: 1px solid $border-color;
@@ -15,14 +28,9 @@
 }
 
 .direction-selection__list {
-  font-family: "Oswald", "Arial", sans-serif;
-  font-weight: normal;
-
   list-style: none;
   margin: 0;
   padding: 0;
-
-  margin-top: 47px;
 
   @media (min-width: $tablet-width) {
     margin-top: 30px;
@@ -31,8 +39,11 @@
 }
 
 .direction-selection__item {
+  position: relative;
   font-size: 16px;
   line-height: 18px;
+  padding-top: 19px;
+  padding-left: 45px;
 
   text-transform: uppercase;
 
@@ -40,4 +51,17 @@
     font-size: 20px;
     line-height: 30px;
   }
+}
+
+.direction-selection__input + .checkbox-indicator {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 30px;
+  height: 30px;
+  border-radius: 15px;
+
+
+  border: 2px solid #000000;
 }

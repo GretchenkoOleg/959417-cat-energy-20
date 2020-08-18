@@ -13,7 +13,7 @@
         <a class="page-header__logo logo" href="index.html">
           <img class="page-header__logo-image" src="img/logo-mobile.svg" width="191" height="39" alt="Логотип Cat Energy">
         </a>
-        <nav class="main-nav">
+        <nav class="main-nav main-nav--closed main-nav--nojs">
           <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
           <ul class="main-nav__list site-list">
             <li class="site-list__item">
@@ -43,22 +43,22 @@
                 <legend class="visually-hidden">Данные</legend>
                 <ul class="pet-data__list">
                   <li class="pet-data__item">
-                    <label for="name">
+                    <label class="pet-data__name" for="name">
                       Имя:<sup>*</sup>
                     </label>
-                    <input type="text" name="login" placeholder="Барсик" id="name" required>
+                    <input class="pet-data__data" type="text" name="login" placeholder="Барсик" id="name" required>
                   </li>
                   <li class="pet-data__item">
-                    <label for="weight">
+                    <label class="pet-data__name" for="weight">
                       Вес (кг):<sup>*</sup>
                     </label>
-                    <input type="text" name="weight" placeholder="7" id="weight" required>
+                    <input class="pet-data__data" type="text" name="weight" placeholder="7" id="weight" required>
                   </li>
                   <li class="pet-data__item">
-                    <label for="age">
+                    <label class="pet-data__name" for="age">
                       Возраст (лет):
                     </label>
-                    <input type="text" name="age" placeholder="7" id="age">
+                    <input class="pet-data__data" type="text" name="age" placeholder="7" id="age">
                   </li>
                 </ul>
               </fieldset>
@@ -66,19 +66,21 @@
                 <legend class="visually-hidden">Направление</legend>
                 <ul class="direction-selection__list">
                   <li class="direction-selection__item">
-                    <input type="checkbox" name="direction" id="losing-weight" value="losing-weight" checked>
-                    <label for="losing-weight">
+                  <!-- Попытка сделать checkbox-->
+                    <label class="direction-selection__checkbox" for="losing-weight">
+                      <input class="visually-hidden direction-selection__input" type="checkbox" name="direction" id="losing-weight" value="losing-weight" checked>
+                      <span class="checkbox-indicator"></span>
                       Похудение
                     </label>
                   </li>
                   <li class="direction-selection__item">
-                    <input type="checkbox" name="direction" id="mass-gain" value="mass-gain">
+                    <input class="visually-hidden direction-selection__checkbox" type="checkbox" name="direction" id="mass-gain" value="mass-gain">
                     <label for="mass-gain">
                       Набор массы
                     </label>
                   </li>
                   <li class="direction-selection__item">
-                    <input type="checkbox" name="direction" id="your-advice" value="your-advice">
+                    <input class="visually-hidden direction-selection__checkbox" type="checkbox" name="direction" id="your-advice" value="your-advice">
                     <label for="your-advice">
                       Не знаю (нужен ваш совет)
                     </label>
@@ -167,31 +169,50 @@
 
     <footer class="page-footer">
       <div class="container">
-        <a class="page-footer__logo logo">
-          <img class="page-footer__logo-image" src="img/logo-footer.svg" width="128" height="24" alt="Логотип Cat Energy">
-        </a>
-        <ul class="page-footer__social social">
-          <li class="social__item">
-            <a class="social__link social__link--vkontakte" href="#">
-              <img class="social__image" src="img/icon-vk.svg" width="22" height="12" alt="Логотип Вконтакте">
-            </a>
-          </li>
-          <li class="social__item">
-            <a class="social__link social__link--instagram" href="#">
-              <img class="social__image" src="img/icon-insta.svg" width="17" height="17" alt="Логотип Инстаграм">
-            </a>
-          </li>
-          <li class="social__item">
-            <a class="social__link social__link--facebook" href="#">
-              <img class="social__image" src="img/icon-fb.svg" width="10" height="19" alt="Логотип Фейсбук">
-            </a>
-          </li>
-        </ul>
-        <a class="page-footer__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy
-          <img class="page-footer__logo-academy" src="img/htmlacademy.svg" width="27" height="34" alt="Логотип HTML Академии">
-        </a>
+        <div class="footer-baseline">
+          <a class="page-footer__logo logo">
+            <img class="page-footer__logo-image" src="img/logo-footer.svg" width="128" height="24" alt="Логотип Cat Energy">
+          </a>
+          <ul class="page-footer__social social">
+            <li class="social__item">
+              <a class="social__link social__link--vkontakte" href="#">
+                <img class="social__image" src="img/icon-vk.svg" width="22" height="12" alt="Логотип Вконтакте">
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--instagram" href="#">
+                <img class="social__image" src="img/icon-insta.svg" width="17" height="17" alt="Логотип Инстаграм">
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--facebook" href="#">
+                <img class="social__image" src="img/icon-fb.svg" width="10" height="19" alt="Логотип Фейсбук">
+              </a>
+            </li>
+          </ul>
+          <a class="page-footer__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy
+            <img class="page-footer__logo-academy" src="img/htmlacademy.svg" width="27" height="34" alt="Логотип HTML Академии">
+          </a>
+        </div>
       </div>
     </footer>
+
+    <script>
+      var navMain = document.querySelector('.main-nav');
+      var navToggle = document.querySelector('.main-nav__toggle');
+
+      navMain.classList.remove('main-nav--nojs');
+
+      navToggle.addEventListener('click', function() {
+        if (navMain.classList.contains('main-nav--closed')) {
+          navMain.classList.remove('main-nav--closed');
+          navMain.classList.add('main-nav--opened');
+        } else {
+          navMain.classList.add('main-nav--closed');
+          navMain.classList.remove('main-nav--opened');
+        }
+      });
+    </script>
 
   </body>
 </html>

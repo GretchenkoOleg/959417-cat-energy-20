@@ -26,7 +26,7 @@
 }
 
 .first-screen__title {
-  font-family: "Oswald", "Arial", sans-serif;
+  font-family: "Oswald-Regular", "Arial", sans-serif;
   font-size: 36px;
   line-height: 36px;
   font-weight: normal;
@@ -43,7 +43,11 @@
     text-align: left;
     margin-left: 91px;
 
-    width: 414px;
+    width: 60%;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 36%;
   }
 }
 
@@ -86,11 +90,24 @@
 .first-screen__link {
   display: inline-block;
   font-size: 14px;
+  width: 100%;
   line-height: 18px;
   color: #ffffff;
+
+  &:focus,
+  &:hover {
+    background-color: #5eaa2f;
+    outline: none;
+  }
+
+  &:active {
+    color: #ffffff;
+    opacity: 0.3;
+  }
 
   @media (min-width: $tablet-width) {
     position: absolute;
     margin: -260px 90px;
+    width: 244px;
   }
 }

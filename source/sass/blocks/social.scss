@@ -4,9 +4,18 @@
 
   display: flex;
   padding-top: 58px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    width: 17%;
+  }
 }
 
 .social__item {
   list-style: none;
   margin: 0 auto;
+}
+
+.social__link {
+  display: inline-block;
 }
