@@ -60,6 +60,7 @@
 
 .product__image {
   margin: 0;
+  z-index: 1;
 
   @media (min-width: $tablet-width) {
     margin-top: -50px;
