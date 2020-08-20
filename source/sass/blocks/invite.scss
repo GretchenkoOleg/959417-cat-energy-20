@@ -1,6 +1,7 @@
 .invite {
   display: flex;
   justify-content: space-between;
+  padding-bottom: 22px;
 
   @media (min-width: $tablet-width) {
     margin-top: 65px;
@@ -16,9 +17,11 @@
 }
 
 .invite__slogan {
-  font-family: "Oswald", "Arial", sans-serif;
   font-size: 16px;
   line-height: 18px;
+
+  width: 50%;
+
 
   @media (min-width: $tablet-width) {
     width: 171px;
@@ -31,10 +34,13 @@
 }
 
 .invite__address {
+  font-family: "Arial", sans-serif;
   font-size: 14px;
   line-height: 20px;
 
   margin: 0;
+
+  width: 50%;
 
   @media (min-width: $tablet-width) {
     width: 160px;

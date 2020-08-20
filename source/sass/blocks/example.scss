@@ -14,6 +14,9 @@
 .example__title {
   padding-top: 27px;
 
+  font-size: 36px;
+  line-height: 40px;
+
   @media (min-width: $tablet-width) {
     font-family: "Oswald", "Arial", sans-serif;
     font-weight: normal;
@@ -33,9 +36,13 @@
 }
 
 .example__description {
+  font-family: "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+
   padding-top: 33px;
-  width: 280px;
-  margin: 0 auto;
+  margin: 0;
+  width: 100%;
 
   @media (min-width: $tablet-width) {
     font-size: 16px;
@@ -53,12 +60,36 @@
 
 .example__feature {
   display: flex;
+  justify-content: space-between;
   padding: 0;
 }
 
 .example__benefits {
   list-style: none;
   text-align: center;
+
+  width: 44%;
+}
+
+.example__border {
+  display: flex;
+  flex-direction: column-reverse;
+  border: 1.5px solid #cdcdcd;
+  border-radius: 5px;
+}
+
+.example__subtitle {
+  padding: 0 20px;
+}
+
+.example__value {
+  font-family: "Oswald-Regular", "Arial", sans-serif;
+  font-size: 24px;
+  line-height: 24px;
+
+  margin: 0;
+
+  text-transform: uppercase;
 }
 
 .example__total {

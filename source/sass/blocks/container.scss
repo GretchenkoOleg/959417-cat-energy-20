@@ -1,6 +1,7 @@
 //От 320px мобильная версия
 .container {
   width: auto;
+  max-width: 500px;
   padding: 0 6%;
 }
 
@@ -8,6 +9,7 @@
 @media (min-width: $tablet-width) {
   .container {
     width: auto;
+    max-width: 1000px;
     padding: 0 4%;
   }
 }
@@ -16,6 +18,7 @@
 @media (min-width: $desktop-width) {
   .container {
     width: auto;
+    max-width: 1600px;
     padding: 0 5%;
   }
 }
