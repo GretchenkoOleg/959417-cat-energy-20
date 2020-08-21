@@ -1,0 +1,17 @@
+.slider {
+  @media (min-width: $tablet-width) {
+    margin-top: 250px;
+    background-color: $secondary-bg-color;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+  }
+}
+
+.slider__image-cat {
+  @media (min-width: $tablet-width) {
+    display: block;
+    margin: 0 auto;
+  }
+}

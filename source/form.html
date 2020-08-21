@@ -66,22 +66,20 @@
                 <legend class="visually-hidden">Направление</legend>
                 <ul class="direction-selection__list">
                   <li class="direction-selection__item">
-                  <!-- Попытка сделать checkbox-->
-                    <label class="direction-selection__checkbox" for="losing-weight">
-                      <input class="visually-hidden direction-selection__input" type="checkbox" name="direction" id="losing-weight" value="losing-weight" checked>
-                      <span class="checkbox-indicator"></span>
+                    <input class="visually-hidden direction-selection__input" type="radio" name="direction" id="losing-weight" value="losing-weight" checked>
+                    <label class="direction-selection__radio" for="losing-weight">
                       Похудение
                     </label>
                   </li>
                   <li class="direction-selection__item">
-                    <input class="visually-hidden direction-selection__checkbox" type="checkbox" name="direction" id="mass-gain" value="mass-gain">
-                    <label for="mass-gain">
+                    <input class="visually-hidden direction-selection__input" type="radio" name="direction" id="mass-gain" value="mass-gain">
+                    <label class="direction-selection__radio" for="mass-gain">
                       Набор массы
                     </label>
                   </li>
                   <li class="direction-selection__item">
-                    <input class="visually-hidden direction-selection__checkbox" type="checkbox" name="direction" id="your-advice" value="your-advice">
-                    <label for="your-advice">
+                    <input class="visually-hidden direction-selection__input" type="radio" name="direction" id="your-advice" value="your-advice">
+                    <label class="direction-selection__radio" for="your-advice">
                       Не знаю (нужен ваш совет)
                     </label>
                   </li>
@@ -93,16 +91,16 @@
               <h2 class="owner-data__title">Контактные данные (владельца кота)</h2>
               <ul class="owner-data__list">
                 <li class="owner-data__item">
-                  <label for="email">
+                  <label class="owner-data__name owner-data__name--email" for="email">
                     e-mail:<sup>*</sup>
                   </label>
-                  <input type="email" name="email" placeholder="kuklachev@gmail.com" id="email" required>
+                  <input class="owner-data__data" type="email" name="email" placeholder="kuklachev@gmail.com" id="email" required>
                 </li>
                 <li class="owner-data__item">
-                  <label for="tel">
+                  <label class="owner-data__name owner-data__name--tel" for="tel">
                     телефон:<sup>*</sup>
                   </label>
-                  <input type="tel" name="tel" placeholder="8 (960) 900-60-90" id="tel" required>
+                  <input class="owner-data__data" type="tel" name="tel" placeholder="8 (960) 900-60-90" id="tel" required>
                 </li>
               </ul>
             </fieldset>
@@ -113,7 +111,7 @@
                 <label class="visually-hidden" for="letter-field">
                   Текст письма:
                 </label>
-                <textarea class="comment__window" placeholder="Расскажите обо всех повадках кота" name="letter" id="letter-field" rows="6" cols="35"></textarea>
+                <textarea class="comment__window" placeholder="   Расскажите обо всех повадках кота" name="letter" id="letter-field" rows="6" cols="35"></textarea>
               </p>
             </fieldset>
             <fieldset class="additionally">
@@ -121,37 +119,36 @@
               <h2 class="additionally__title">Дополнительно</h2>
               <ul class="additionally__list">
                 <li class="additionally__item">
-                  <input type="checkbox" name="additionally" id="sweetener" value="sweetene" checked>
-                  <label for="sweetener">
+                  <input class="visually-hidden additionally__input" type="checkbox" name="additionally" id="sweetener" value="sweetene" checked>
+                  <label class="additionally__checkbox" for="sweetener">
                     Сахарозаменитель
                   </label>
                 </li>
                 <li class="additionally__item">
-                  <input type="checkbox" name="additionally" id="drinking-water" value="drinking-water">
-                  <label for="drinking-water">
+                  <input class="visually-hidden additionally__input" type="checkbox" name="additionally" id="drinking-water" value="drinking-water">
+                  <label class="additionally__checkbox" for="drinking-water">
                     Питьевая вода
                   </label>
                 </li>
                 <li class="additionally__item">
-                  <input type="checkbox" name="additionally" id="milk" value="milk">
-                  <label for="milk">
+                  <input class="visually-hidden additionally__input" type="checkbox" name="additionally" id="milk" value="milk">
+                  <label class="additionally__checkbox" for="milk">
                     Молоко
                   </label>
                 </li>
                 <li class="additionally__item">
-                  <input type="checkbox" name="additionally" id="vitamins" value="vitamins">
-                  <label for="vitamins">
+                  <input class="visually-hidden additionally__input" type="checkbox" name="additionally" id="vitamins" value="vitamins">
+                  <label class="additionally__checkbox" for="vitamins">
                     Витамины
                   </label>
                 </li>
               </ul>
             </fieldset>
             <div class="block-form">
-              <button type="submit" class="form-program-selection__button button">Отправить заявку</button>
-              <p><sup>*</sup>— Обязательные поля</p>
+              <button class="form-program-selection__button button" type="submit">Отправить заявку</button>
+              <p class="form-program-selection__decryption"><sup>*</sup>— Обязательные поля</p>
             </div>
           </form>
-
         </section>
       </div>
       <section class="location location--gray">

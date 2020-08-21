@@ -5,6 +5,10 @@
   &--gray {
     background-color: $secondary-bg-color;
   }
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+  }
 }
 
 .location b {

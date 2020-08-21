@@ -59,7 +59,11 @@
     text-transform: uppercase;
 
     margin-top: 49px;
-    width: 134px;
+    width: 46%;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 55%;
   }
 }
 
@@ -77,6 +81,10 @@
     line-height: 18px;
 
     width: 52%;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 68%;
   }
 }
 
