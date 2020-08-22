@@ -1,17 +1,5 @@
 .page-footer {
   background-color: $secondary-bg-color;
-
-  @media (min-width: $tablet-width) {
-    display: flex;
-    justify-content: space-between;
-  }
-}
-
-.page-footer .container {
-  @media (min-width: $tablet-width) {
-    display: flex;
-    justify-content: space-between;
-  }
 }
 
 .page-footer__logo-image {

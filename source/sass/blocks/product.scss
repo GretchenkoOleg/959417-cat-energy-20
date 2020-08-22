@@ -60,6 +60,7 @@
 
 .product__image {
   margin: 0;
+  z-index: 1;
 
   @media (min-width: $tablet-width) {
     margin-top: -50px;
@@ -69,6 +70,10 @@
 .product__description {
   display: block;
   width: 84%;
+
+  @media (min-width: $desktop-width) {
+    width: 100%;
+  }
 }
 
 .product__feature {
@@ -84,6 +89,10 @@
 
     margin-top: 18px;
     width: 77%;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 100%;
   }
 }
 
@@ -138,8 +147,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 169px;
-    margin-left: 40px;
+    width: 69%;
 
     &:focus,
     &:hover {

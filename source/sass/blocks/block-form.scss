@@ -1,6 +1,11 @@
 .block-form {
   @media (min-width: $tablet-width) {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    padding-bottom: 72px;
+  }
+
+  @media (min-width: $desktop-width) {
+    justify-content: start;
   }
 }

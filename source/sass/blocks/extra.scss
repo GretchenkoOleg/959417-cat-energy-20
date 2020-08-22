@@ -20,14 +20,24 @@
 .extra__title {
   font-size: 16px;
   line-height: 16px;
+  font-weight: 400;
   text-transform: uppercase;
+
+  @media (min-width: $desktop-width) {
+    font-size: 20px;
+    line-height: 20px;
+  }
 }
 
 .extra__feature {
-  width: 282px;
+  width: 100%;
 
   display: flex;
   justify-content: space-between;
+
+  @media (min-width: $tablet-width) {
+    width: 37%;
+  }
 }
 
 .extra__button {

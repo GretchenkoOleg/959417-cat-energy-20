@@ -1,35 +1,81 @@
 .additionally {
+  position: relative;
   background-color: $bg-color;
   border: none;
   margin: 0;
   padding: 0;
+  width: 100%;
+
+  &::after {
+    content: "";
+
+    position: absolute;
+    top: 36px;
+    right: 0;
+    width: 100%;
+
+    border-top: 2px solid #68b738;
+    z-index: 0;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding: 0 40px;
+
+    &::after {
+      content: "";
+
+      position: absolute;
+      top: 52px;
+      right: 0;
+      width: 100%;
+
+      border-top: 2px solid #68b738;
+      z-index: 0;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding: 0;
+    }
+  }
 }
 
 .additionally__title {
-  font-family: "Oswald", "Arial", sans-serif;
-  font-weight: normal;
+  position: relative;
+  font-weight: 400;
+
   font-size: 24px;
   line-height: 26px;
+
+  padding-right: 10px;
+
+  width: 44%;
+  background-color: $bg-color;
+  z-index: 1;
 
   @media (min-width: $tablet-width) {
     font-size: 36px;
     line-height: 36px;
+    padding: 0 40px;
+    width: 30%;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+    width: 17%;
   }
 }
 
 .additionally__list {
   list-style: none;
   padding: 0;
+  margin: 0;
+  padding-bottom: 44px;
+
 
   @media (min-width: $tablet-width) {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-  }
-
-  @media (min-width: $desktop-width) {
-    display: flex;
-    justify-content: space-around;
   }
 }
 
@@ -44,4 +90,53 @@
     line-height: 30px;
     width: 50%;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 18%;
+  }
+}
+
+.additionally__checkbox {
+  margin-top: 25px;
+
+  font-size: 16px;
+  line-height: 18px;
+}
+
+.additionally__input:checked + label,
+.additionally__input:not(:checked) + label {
+  display: inline-block;
+  position: relative;
+  padding-left: 45px;
+  cursor: pointer;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 1px;
+    top: -6px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #dddddd;
+    border-radius: 2px;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 7px;
+    top: 3px;
+    width: 20px;
+    height: 20px;
+    background-image: url("../../img/icon-tick.svg");
+    background-repeat: no-repeat;
+  }
+}
+
+.additionally__input:not(:checked) + label::after {
+  opacity: 0;
+}
+
+.additionally__input:checked + label::after {
+  opacity: 1;
 }

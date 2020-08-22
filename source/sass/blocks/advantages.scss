@@ -1,10 +1,15 @@
 .advantages {
   background-color: $bg-color;
+  padding-bottom: 32px;
 }
 
 .advantages__title {
   margin: 0;
   padding: 0;
+
+
+  font-size: 36px;
+  line-height: 40px;
 
   padding-top: 27px;
 
@@ -24,8 +29,7 @@
   margin: 0;
   padding: 0;
 
-  margin-left: 78px;
-  width: 63%;
+  margin-left: 80px;
 
   @media (min-width: $tablet-width) {
     display: flex;
@@ -43,166 +47,145 @@
 
 .advantages__item {
   position: relative;
+
   list-style: none;
   margin: 0 auto;
-
-  &::after {
-    content: "";
-
-    position: absolute;
-    top: 0;
-    right: 200px;
-
-    width: 60px;
-    height: 62px;
-
-    background-color: #68b738;
-    z-index: 0;
-  }
+  min-height: 60px;
 
   &--nutrients::before {
     content: "";
 
     position: absolute;
-    top: 5px;
-    right: 195px;
+    top: 0;
+    left: -80px;
 
     width: 60px;
-    height: 62px;
+    height: 60px;
 
     background-image: url("../../img/advantage-leaf@1x.png");
     background-repeat: no-repeat;
-    z-index: 1;
+    background-position: center;
+    background-color: #68b738;
   }
 
   &--packing::before {
     content: "";
 
     position: absolute;
-    top: 5px;
-    right: 195px;
+    top: 0;
+    left: -80px;
 
     width: 60px;
-    height: 62px;
+    height: 60px;
 
     background-image: url("../../img/advantage-powder@1x.png");
     background-repeat: no-repeat;
-    z-index: 1;
+    background-position: center;
+    background-color: #68b738;
   }
 
   &--food::before {
     content: "";
 
     position: absolute;
-    top: 5px;
-    right: 195px;
+    top: 0;
+    left: -80px;
 
     width: 60px;
-    height: 62px;
+    height: 60px;
 
     background-image: url("../../img/advantage-dining@1x.png");
     background-repeat: no-repeat;
-    z-index: 1;
+    background-position: center;
+    background-color: #68b738;
   }
 
   &--changes::before {
     content: "";
 
     position: absolute;
-    top: 5px;
-    right: 195px;
+    top: 0;
+    left: -80px;
 
     width: 60px;
-    height: 62px;
+    height: 60px;
 
     background-image: url("../../img/advantage-clock@1x.png");
     background-repeat: no-repeat;
-    z-index: 1;
+    background-position: center;
+    background-color: #68b738;
   }
 
   @media (min-width: $tablet-width) {
     margin: 0;
     margin-top: 32px;
     margin-right: 79px;
-    width: 240px;
-
-    &::after {
-      content: "";
-
-      position: absolute;
-      top: 0;
-      right: 160px;
-
-      width: 80px;
-      height: 80px;
-
-      background-color: #68b738;
-      z-index: 0;
-    }
+    width: 34%;
 
     &--nutrients::before {
       content: "";
 
       position: absolute;
-      top: 15px;
-      right: 143px;
+      top: 0;
+      left: 0;
 
       width: 80px;
       height: 80px;
 
       background-image: url("../../img/advantage-leaf@1x.png");
       background-repeat: no-repeat;
-      z-index: 1;
+      background-color: #68b738;
     }
 
     &--packing::before {
       content: "";
 
       position: absolute;
-      top: 15px;
-      right: 143px;
+      top: 0;
+      left: 0;
 
       width: 80px;
       height: 80px;
 
       background-image: url("../../img/advantage-powder@1x.png");
       background-repeat: no-repeat;
-      z-index: 1;
+      background-color: #68b738;
     }
 
     &--food::before {
       content: "";
 
       position: absolute;
-      top: 15px;
-      right: 143px;
+      top: 0;
+      left: 0;
 
       width: 80px;
       height: 80px;
 
       background-image: url("../../img/advantage-dining@1x.png");
       background-repeat: no-repeat;
-      z-index: 1;
+      background-color: #68b738;
     }
 
     &--changes::before {
       content: "";
 
       position: absolute;
-      top: 15px;
-      right: 143px;
+      top: 0;
+      left: 0;
 
       width: 80px;
       height: 80px;
 
       background-image: url("../../img/advantage-clock@1x.png");
       background-repeat: no-repeat;
-      z-index: 1;
+      background-color: #68b738;
     }
 
     @media (min-width: $desktop-width) {
       margin: 0;
       margin-top: 32px;
+      width: 22%;
     }
   }
 }
@@ -216,6 +199,8 @@
     position: relative;
     font-size: 16px;
     line-height: 24px;
+
+    width: 92%;
 
     margin: 0;
     margin-top: 117px;

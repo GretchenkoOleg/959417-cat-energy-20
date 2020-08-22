@@ -4,7 +4,9 @@
 
 .form-profile__title {
   position: relative;
-  font-size: 33px;
+  font-size: 36px;
+  line-height: 36px;
+
   padding-top: 27px;
 
   &::before {
@@ -21,7 +23,12 @@
   @media (min-width: $tablet-width) {
     font-size: 60px;
     line-height: 60px;
+    padding: 0;
     margin-top: 65px;
+
+    &::before {
+      border: none;
+    }
   }
 
   @media (min-width: $desktop-width) {
@@ -34,13 +41,21 @@
   line-height: 18px;
 
   margin-top: 37px;
-  width: 226px;
+  width: 71%;
 
   text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 30px;
-    width: 323px;
+    width: 46%;
+    margin-left: 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+    margin-top: 56px;
+
+    width: 26%;
   }
 }
