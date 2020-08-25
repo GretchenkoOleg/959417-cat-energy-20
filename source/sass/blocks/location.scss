@@ -1,6 +1,22 @@
 .location {
+  position: relative;
   background-color: $bg-color;
   padding-top: 20px;
+
+  &::before {
+    content: "";
+
+    position: absolute;
+
+    top: 245px;
+    left: 107px;
+
+    width: 112px;
+    height: 106px;
+
+    background-image: url("../../img/map-pin.png");
+    background-repeat: no-repeat;
+  }
 
   &--gray {
     background-color: $secondary-bg-color;
@@ -8,9 +24,17 @@
 
   @media (min-width: $tablet-width) {
     padding: 0;
-  }
-}
 
-.location b {
-  text-transform: uppercase;
+    &::before {
+      top: 316px;
+      left: 282px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &::before {
+      top: 125px;
+      left: 781px;
+    }
+  }
 }
