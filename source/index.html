@@ -14,7 +14,7 @@
           <picture>
             <source media="(min-width: 1200px)" srcset="img/logo-desktop.svg">
             <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
-            <img class="page-header__logo-image" src="img/logo-mobile.svg" width="191" height="39" alt="Логотип Cat Energy">
+            <img class="page-header__logo-image" src="img/logo-mobile.svg" alt="Логотип Cat Energy">
           </picture>
         </a>
         <nav class="main-nav main-nav--closed main-nav--nojs">
@@ -112,7 +112,12 @@
           </section>
           <section class="slider">
             <h2 class="visually-hidden">Слайдер результата</h2>
-            <img class="slider__image-cat" src="img/before-mobile@1x.png" width="311" height="232" alt="Картинка кота">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/before-desktop@1x.png 1x, img/before-desktop@2x.png 2x">
+              <source media="(min-width: 768px)" srcset="img/before-tablet@1x.png 1x, img/before-tablet@2x.png 2x">
+              <img class="slider__image-cat" src="img/before-mobile@1x.png"
+              srcset="img/before-mobile@2x.png 2x" alt="Картинка кота">
+            </picture>
           </section>
         </div>
       </section>
