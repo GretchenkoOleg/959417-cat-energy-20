@@ -12,6 +12,17 @@
   }
 }
 
+.page-footer__logo {
+  &:focus,
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+}
+
 .page-footer__social {
   position: relative;
 
@@ -63,7 +74,20 @@
       display: none;
     }
   }
+
+  @media (min-width: $desktop-width){
+    &:focus,
+    &:hover {
+    color: #68B738;
+    }
+    &:active {
+    color: #68B738;
+    opacity: 0.3;
+    }
+  }
 }
+
+
 
 .page-footer__logo-academy {
   @media (min-width: $tablet-width) {
