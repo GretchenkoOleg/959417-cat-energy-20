@@ -75,19 +75,18 @@
     }
   }
 
-  @media (min-width: $desktop-width){
+  @media (min-width: $desktop-width) {
     &:focus,
     &:hover {
-    color: #68B738;
+      color: #68b738;
     }
+
     &:active {
-    color: #68B738;
-    opacity: 0.3;
+      color: #68b738;
+      opacity: 0.3;
     }
   }
 }
-
-
 
 .page-footer__logo-academy {
   @media (min-width: $tablet-width) {
