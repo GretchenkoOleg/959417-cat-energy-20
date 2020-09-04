@@ -19,3 +19,15 @@
 .social__link {
   display: inline-block;
 }
+
+.social__image {
+  &:focus,
+  &:hover {
+    fill: #68b738;
+  }
+
+  &:active {
+    fill: #68b738;
+    opacity: 0.3;
+  }
+}

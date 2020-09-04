@@ -41,6 +41,10 @@
           <h2 class="first-screen__title">Функциональное питание для котов</h2>
           <b class="first-screen__slogan">Занялся собой? Займись котом!</b>
           <picture>
+            <source type="image/webp" media="(min-width: 1200px)" srcset="img/index-can-desktop@1x.webp 1x, img/index-can-desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)" srcset="img/index-can-tablet@1x.webp 1x, img/index-can-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="img/index-can-mobile@1x.webp 1x, img/index-can-mobile@2x.webp 2x">
+
             <source media="(min-width: 1200px)" srcset="img/index-can-desktop@1x.png 1x, img/index-can-desktop@2x.png 2x">
             <source media="(min-width: 768px)" srcset="img/index-can-tablet@1x.jpg 1x, img/index-can-tablet@2x.jpg 2x">
             <img class="first-screen__image-feed-pack" src="img/index-can-mobile@1x.png"
@@ -113,6 +117,10 @@
           <section class="slider">
             <h2 class="visually-hidden">Слайдер результата</h2>
             <picture>
+              <source type="image/webp" media="(min-width: 1200px)" srcset="img/before-desktop@1x.webp 1x, img/before-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/before-tablet@1x.webp 1x, img/before-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/before-mobile@1x.webp 1x, img/before-mobile@2x.webp 2x">
+
               <source media="(min-width: 1200px)" srcset="img/before-desktop@1x.png 1x, img/before-desktop@2x.png 2x">
               <source media="(min-width: 768px)" srcset="img/before-tablet@1x.png 1x, img/before-tablet@2x.png 2x">
               <img class="slider__image-cat" src="img/before-mobile@1x.png"
@@ -129,8 +137,12 @@
             <p class="invite__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
           </div>
           <picture>
+            <source type="image/webp" media="(min-width: 1200px)" srcset="img/bg-map-desktop@1x.webp 1x, img/bg-map-desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.webp 1x, img/bg-map-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="img/bg-map-mobile@1x.webp 1x, img/bg-map-mobile@2x.webp 2x">
+
             <source media="(min-width: 1200px)" srcset="img/bg-map-desktop@1x.png 1x, img/bg-map-desktop@2x.png 2x">
-            <source media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.png 1x, img/bg-map-tablet@2x.jpg 2x">
+            <source media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.png 1x, img/bg-map-tablet@2x.png 2x">
             <img class="location__map" src="img/bg-map-mobile@1x.png"
             srcset="img/bg-map-mobile@2x.png 2x" alt="Карта с местонахождением ул. Большая Конюшенная, д. 19/8 Санкт-Петербург">
           </picture>
@@ -146,23 +158,31 @@
           </a>
           <ul class="page-footer__social social">
             <li class="social__item">
-              <a class="social__link social__link--vkontakte" href="#">
-                <img class="social__image" src="img/icon-vk.svg" width="22" height="12" alt="Логотип Вконтакте">
+              <a class="social__link social__link--vkontakte" href="#" aria-label="Логотип Вконтакте">
+                <svg class="social__image" width="22" height="12">
+                  <use xlink:href="img/sprites.svg#icon-vk"></use>
+                </svg>
               </a>
             </li>
             <li class="social__item">
-              <a class="social__link social__link--instagram" href="#">
-                <img class="social__image" src="img/icon-insta.svg" width="17" height="17" alt="Логотип Инстаграм">
+              <a class="social__link social__link--instagram" href="#" aria-label="Логотип Инстаграм">
+                <svg class="social__image" width="16" height="16">
+                  <use xlink:href="img/sprites.svg#icon-insta"></use>
+                </svg>
               </a>
             </li>
             <li class="social__item">
-              <a class="social__link social__link--facebook" href="#">
-                <img class="social__image" src="img/icon-fb.svg" width="10" height="19" alt="Логотип Фейсбук">
+              <a class="social__link social__link--facebook" href="#" aria-label="Логотип Фейсбук">
+                <svg class="social__image" width="10" height="19">
+                  <use xlink:href="img/sprites.svg#icon-fb"></use>
+                </svg>
               </a>
             </li>
           </ul>
-          <a class="page-footer__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy
-            <img class="page-footer__logo-academy" src="img/htmlacademy.svg" width="27" height="34" alt="Логотип HTML Академии">
+          <a class="page-footer__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Логотип HTML Академии">HTML Academy
+            <svg class="page-footer__logo-academy" width="27" height="34">
+              <use xlink:href="img/sprites.svg#htmlacademy"></use>
+            </svg>
           </a>
         </div>
       </div>
