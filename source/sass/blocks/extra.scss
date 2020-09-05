@@ -43,6 +43,18 @@
 .extra__button {
   width: 100%;
 
+  &:focus,
+  &:hover {
+    background-color: #5eaa2f;
+    outline: none;
+  }
+
+  &:active {
+    color: #ffffff;
+    opacity: 0.3;
+  }
+
+
   @media (min-width: $tablet-width) {
     width: 100%;
   }
