@@ -292,6 +292,7 @@
   background-size: 24px;
   background-position: 130px;
   background-repeat: no-repeat;
+  outline: none;
 
   &:focus,
   &:hover {
@@ -299,6 +300,7 @@
     background-size: 32px;
     background-position: 130px;
     background-repeat: no-repeat;
+    outline: none;
   }
 
   &:active {

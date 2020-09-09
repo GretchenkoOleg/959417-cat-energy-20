@@ -11,6 +11,9 @@ const imagemin = require("gulp-imagemin");
 const webp = require("gulp-webp");
 const svgstore = require("gulp-svgstore");
 const del = require("del");
+const htmlmin = require("gulp-htmlmin");
+const uglify = require("gulp-uglify");
+const pipeline = require("readable-stream").pipeline;
 
 // Styles
 
@@ -122,15 +125,38 @@ const clean = () => {
 
 exports.clean = clean;
 
+//Html
+
+const html = () => {
+  return gulp.src("source/*.html")
+    .pipe(htmlmin({ collapseWhitespace: true }))
+    .pipe(gulp.dest("build"));
+}
+
+exports.html = html;
+
+//Js
+
+const jsmin = () => {
+  return pipeline(
+    gulp.src("source/js/*.js"),
+    uglify(),
+    gulp.dest("build/js")
+  );
+}
+
+exports.jsmin = jsmin;
+
 //Build
 
 const build = () => gulp.series(
   "clean",
   "copy",
   "styles",
-  "sprite"
+  "sprite",
+  "html"
 );
 
 exports.build = gulp.series(
-  clean, copy, styles, sprite
+  clean, copy, styles, sprite, html, jsmin
 );
